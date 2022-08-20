@@ -1,0 +1,240 @@
+/* colors: #3A3845; dark grey
+   #7D5A50; brown
+    #826F66;
+    #e5b299; light brown
+ extra... #d3a994;
+}
+*/
+* {
+    font-family: 'Aboreto', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: rgb(51, 51, 51);
+    font-size: 1rem;
+}
+
+
+
+/* Main Container */
+.container {
+    background-color: #FFF4EC;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+/* Logo */
+.logo *{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+}
+
+.bb-logo1 {
+    width: 30%;
+}
+
+.bb-logo2 {
+    width: 65%;
+}
+
+/* Banner */
+.banner img{
+    width:100%;
+    height: 200px;
+}
+/* The Body */
+.the-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Sections */
+.sections-list {
+    padding-left: 0;
+}
+
+.sections {
+    width: 20%;
+}
+
+.sections-list li {
+    list-style: none;
+
+}
+
+/* Items */
+.section-name{
+    text-align: center;
+
+}
+
+.section-name h2{
+    font-family: 'Roboto Slab', serif;
+    font-size: 3rem;
+    margin: 3% 0 2%;
+    color: #7D5A50;
+    letter-spacing: 0.2rem;
+}
+
+.items-div {
+    width: 78%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px 20px;
+}
+
+.item {
+    margin: 2% 1%;
+    height: 35vmax;
+    width: auto;
+    background-color: #e5b29976;
+    border-radius: 20% 20% 4% 4%;
+    text-align: center;
+    overflow: hidden;
+    transition: all 350ms ease-in-out;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item img {
+    width: 100%;
+    height: 25vmax;
+    border-radius: 20% 20% 0 0;
+    transition: all 350ms ease-in-out;
+}
+
+.item img:hover {
+    transform: scale(1.05);
+}
+
+
+h4.product-name {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.1rem;
+    margin: 3% 0 2%;
+    color:#3A3845;
+}
+
+h3.product-price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    color: #7D5A50;
+    margin: 3% 0;
+}
+
+.cut-price{
+    text-decoration: line-through;
+    color:#3a384599;
+}
+
+.add-to-cart-btn {
+    color: #e5b299;
+    background-color: #3A3845;
+    border-radius: 20%;
+    border: 1px solid #e5b299;
+    width: 70%;
+    padding: 2% 5%;
+    margin: 0 0 5% 0;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+
+
+}
+
+.add-to-cart-btn:hover,
+.next-section button:hover,
+.link:hover {
+    color: #3A3845;
+    background-color: #e5b299;
+    border: 0.5px solid #3A3845;
+    box-shadow: 5px 5px 2px #3a3845b3;
+}
+
+.add-to-cart-btn:active,
+.next-section button:active,.link:active {
+    background-color: #d3a994;
+
+    transform: translate(5px, 5px);
+    box-shadow: 0 0 10px #3A3845;
+}
+
+.next-section {
+    margin: 5% 1%;
+    text-align: right;
+}
+
+.next-section button {
+    color: #e5b299;
+    background-color: #3A3845;
+    border-radius: 30%;
+    border: 1px solid #e5b299;
+    width: 30%;
+    padding: 2% 5%;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+/* .offers{
+    display: none;
+} */
+
+/* Site Map */
+
+
+/* Footer */
+footer {
+    background-color: #826F66;
+    text-align: center;
+    padding: 2%;
+    
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.link {
+    color: #e5b299;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 1% 2%;
+    border-radius: 20%;
+    transition: all 250ms ease-in-out;
+}
+
+.copyright{
+    color: #fec7ac;
+    padding-top: 2%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.svg{
+    opacity: 0.3;
+    width:15%;
+}
