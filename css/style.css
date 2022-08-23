@@ -13,10 +13,13 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 16px;
+}
+
 body {
     margin: 0;
     color: rgb(51, 51, 51);
-    /* font-size: 3vw; */
     background-color: #FFF4EC;
 }
 
@@ -91,14 +94,14 @@ header, .logo{
 }
 
 .menu{
-    font-size: 1.7vw;
+    font-size: 1.7rem;
     color: #7D5A50;
     letter-spacing: 0.2vw; 
 }
 
 .section{
     list-style: none;
-    font-size:1.5vw;
+    font-size:1.5rem;
     font-family: 'Montserrat', sans-serif;
     color: #7D5A50;
     letter-spacing: 0.2vw;  text-decoration: none;
@@ -125,7 +128,7 @@ header, .logo{
 @keyframes bop {
    
     to {font-weight: bolder;
-        font-size:1.7vw;
+        font-size:1.7rem;
         color: #ee1717;}
   }
   
@@ -144,7 +147,7 @@ header, .logo{
 
 .section-name h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2vw;
+    font-size: 2rem;
     margin: 3% 0 2%;
     color: #7D5A50;
     letter-spacing: 0.2vw;
@@ -163,7 +166,6 @@ header, .logo{
 .item {
     margin: 2% 1%;
     height: 35vmax;
-    min-height: 35vmax;
     width: auto;
     background-color: #e5b29976;
     border-radius: 20% 20% 4% 4%;
@@ -190,14 +192,14 @@ header, .logo{
 
 h4.product-name {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.3vw;
+    font-size: 1.3rem;
     margin: 3% 0 2%;
     color: #3A3845;
 }
 
 h3.product-price {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1vw;
+    font-size: 1rem;
     letter-spacing: 0.2vw;
     color: #7D5A50;
     margin: 3% 0;
@@ -216,7 +218,7 @@ h3.product-price {
     width: 70%;
     padding: 2% 5%;
     margin: 0 0 5% 0;
-    font-size: 1vw;
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
     transition: all 250ms ease-in-out;
@@ -254,7 +256,7 @@ h3.product-price {
     border: 1px solid #e5b299;
     width: 30%;
     padding: 2% 4%;
-    font-size: 1vw;
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
     cursor: pointer;
@@ -286,7 +288,7 @@ footer {
 .link {
     color: #e5b299;
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.9vw;
+    font-size: 0.9rem;
     text-decoration: none;
     cursor: pointer;
     padding: 1% 2%;
@@ -297,7 +299,7 @@ footer {
 .copyright {
     color: #fec7ac;
     padding-top: 2%;
-    font-size: 0.9vw;
+    font-size: 0.9rem;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -312,14 +314,33 @@ footer {
 481px — 768px: iPads, Tablets.
 769px — 1024px: Small screens, laptops.
  */
+
+ /* Small Screen View*/
+ @media (max-width:1100px) {
+    html{
+        font-size: 12px;
+    }
+}
  /* Tablet View*/
-@media (max-width:768px) {
-   
+@media (max-width:900px) {
+    html{
+        font-size: 10px;
+    }
+}
+
+@media (max-width:750px) {
+    html{
+        font-size: 8px;
+    }
 }
 
 /* Mobile View */
 @media (max-width:485px) {
     /* 2 cards on a row */
+    html{
+        font-size: 7px;
+    }
+
     .banner{
         height:24vh;
     }
@@ -334,8 +355,11 @@ footer {
 
     .the-body {
         display: block;
-        width:70%;
+        width:90%;
         margin: 0 auto;
+    }
+    .item {
+        height: 36vmax;
     }
 
     .items-div {
@@ -345,6 +369,11 @@ footer {
     .grid-container {
         grid-template-columns: auto auto;
     }
+
+    .add-to-cart-btn {
+        width: 50%;
+    }
+
     .footer-links {
         display: block;
     }
