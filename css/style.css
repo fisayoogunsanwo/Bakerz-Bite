@@ -308,7 +308,7 @@ footer {
     width: 15%;
 }
 
-
+/* _________________ Media Queries */
 /* 
 320px — 480px: Mobile devices.
 481px — 768px: iPads, Tablets.
@@ -326,23 +326,34 @@ footer {
     html{
         font-size: 10px;
     }
+
+    .banner{
+        height:35vh;
+    }
 }
 
 @media (max-width:750px) {
     html{
-        font-size: 8px;
+        font-size: 9px;
     }
+
+    .banner{
+        height:30vh;
+    }
+}
+
+@media (max-width:650px) {
+.item {
+    height: 36vmax;
+}
 }
 
 /* Mobile View */
 @media (max-width:485px) {
     /* 2 cards on a row */
-    html{
-        font-size: 7px;
-    }
 
     .banner{
-        height:24vh;
+        height:20vh;
     }
 
     .sections{
@@ -358,8 +369,9 @@ footer {
         width:90%;
         margin: 0 auto;
     }
+   
     .item {
-        height: 36vmax;
+        height: 37vmax;
     }
 
     .items-div {
@@ -374,8 +386,10 @@ footer {
         width: 50%;
     }
 
-    .footer-links {
-        display: block;
-    }
+}
 
+@media (max-width:380px) {
+    .item {
+        height: 38vmax;
+    }
 }
