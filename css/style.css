@@ -23,12 +23,60 @@ body {
     background-color: #FFF4EC;
 }
 
+/* Loader */
+.loader{
+    width:100vw;
+    height:100%;
+    position:absolute;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index:1;
+   background-image: linear-gradient(to bottom right, #7d5a507e,#e5b299db, #e5b299b0);
+}
 
+.loader-back-image{
+    width:100vw;
+    height:100%;
+    position:relative;
+    background:url("../images/pastry-hand-drawn.png") repeat fixed center;
+    opacity: 0.15;
+    background-size: 40% 80%;
+    z-index:2;
+}
+
+
+
+.loader-img{
+    position: absolute;
+    border-radius: 40%;
+    border: 1px solid #7D5A50;
+    border-left: none;
+    border-right: none;
+    padding: 1%;
+    width: 6%;
+    margin: auto 0;
+    animation:loader-bop 1000ms ease-in-out infinite alternate;
+    z-index:3;
+}
+
+@keyframes loader-bop {
+    0%{}
+    100%{
+        background-color: #3a38453d;
+        width: 8%;
+        transform: rotateY(180deg);
+        box-shadow: 0 0 10px #3a3845dd;
+        }
+}
 
 /* Main Container */
 .container {
+    display: none;
     background-color: #FFF4EC;
     box-sizing: border-box;
+    width:100vw;
+    height:auto;
 }
 
 /* Logo */
@@ -60,9 +108,11 @@ header, .logo{
     width: inherit;
     height: 46vh;
     text-align: center;
+   
 }
 
 .banner video{
+     border-radius: 3%;
     object-fit: cover;
     width: 99%;
     height: 100%;
@@ -183,12 +233,21 @@ header, .logo{
     height: 25vmax;
     border-radius: 20% 20% 0 0;
     transition: all 450ms ease-in-out;
+    /* position: relative; */
 }
 
 .item img:hover {
     transform: scale(1.1);
 }
 
+.discount-tag{
+    position:absolute;
+    left:25%;
+    width:10%;
+    height: 5%;
+    color: wheat;
+    background-color: rgb(255, 58, 58);
+}
 
 h4.product-name {
     font-family: 'Montserrat', sans-serif;
@@ -315,7 +374,7 @@ footer {
 769px — 1024px: Small screens, laptops.
  */
 
- /* Small Screen View*/
+ /* Small Laptop Screen View*/
  @media (max-width:1100px) {
     html{
         font-size: 12px;
