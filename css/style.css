@@ -39,7 +39,7 @@ body {
     width:100vw;
     height:100%;
     position:relative;
-    background:url("../images/pastry-hand-drawn.png") repeat fixed center;
+    background:url("../images/loader-background-pastry.png") repeat fixed center;
     opacity: 0.15;
     background-size: 40% 80%;
     z-index:2;
@@ -226,6 +226,7 @@ header, .logo{
 
 .item:hover {
     transform: scale(1.05);
+    cursor: zoom-in;
 }
 
 .item img {
