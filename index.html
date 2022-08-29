@@ -16,24 +16,69 @@
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/6982c0ced7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/popup.css">
     <title>Bakerz Bite</title>
 </head>
 
 <body>
+    <!-- popup start -->
+    <dialog class="modal"> 
+        <div class="close-div">
+            <img class="bb-logo2" src="./images/bakerzbite-logo/vector/default-monochrome.svg">
+
+            <button class="close-modal">
+                <img src="./images/icons8-no.svg" alt="">
+            </button>   
+        </div>        
+        <div class="modal-sub">
+            <div class="modal-img">
+                <img src="./images/apple-pie1.png" alt="">
+            </div>
+
+            <div class="name-div">
+                <h2 class="txt-header">Cookie Crumble</h2>
+                <h2 class="txt-header ul-txt">Ingredients</h2>
+                <h1 class="sub-text">Flour, Wheat, Brown sugar, <br> Chocolate</h1>
+                <h2 class="txt-header">$20.50</h2>
+                <h1 class="popup-item-header">
+                    <button>add</button>
+                    <button>subtract</button>
+                </p>
+
+                <div class="cart-fav">
+                    <button>Add to cart</button>
+                    <button>Favourites</button>
+                </div>
+            </div>
+
+        </div>
+    </dialog>
+    <!-- popup end -->
+
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-back-image">
+        </div>
+        <img class="loader-img" src="./images/apple-pie3.png" alt="">
+    </div>
+    
     <!-- Main Container -->
     <div class="container">
+
+
         <!-- Logo -->
-        <div class="logo">
-            <a href="./index.html">
+        <header>
+            <a class="logo" href="./index.html">
                 <img class="bb-logo1" src="./images/apple-pie2.png" alt="Bakerz Bite Logo">
                 <img class="bb-logo2" src="./images/bakerzbite-logo/vector/default-monochrome.svg"
                     alt="Bakerz Bite Homepage">
             </a>
-        </div>
+            <div class="dropdown-menu">dropdown</div>
+        </header>
 
         <!-- Banner -->
         <div class="banner">
-            <video autoplay loop>
+            <video autoplay>
                 <source src="./images/banner.mp4" type="video/mp4">
                 Your browser does not support this video!!!
             </video>
@@ -44,18 +89,25 @@
         <div class="the-body">
             <!-- Sections -->
             <div class="sections">
+                <p class="menu">MENU</p>
                 <ul class="sections-list">
-                    <li>Cakes</li>
-                    <li>Pastries</li>
-                    <li>Cookies</li>
-                    <li>Pies</li>
-                    <li>Beverages</li>
-                    <li>Merch</li>
-                    <li class="offers"> OFFERS (up to 50% discount)</li>
-                    <li>Dont Know Yet</li>
+                    <hr class="section-divide">
+                    <li><a class="section cake-section" href="">Cakes</a> </li>
+                    <hr class="section-divide">
+                    <li><a class="section pastries-section" href="">Pastries</a></li>
+                    <hr class="section-divide">
+                    <li><a class="section cookies-section" href="">Cookies</a></li>
+                    <hr class="section-divide">
+                    <li><a class="section pies-section" href="">Pies</a></li>
+                    <hr class="section-divide">
+                    <li><a class="section beverages-section" href="">Beverages</a></li>
+                    <hr class="section-divide">
+                    <li><a class="section merch-section" href="">Merch</a></li>
+                    <hr class="section-divide">
+                    <li class="offers"><a class="section offers-section" href=""> OFFERS (up to 50% discounts)</a></li>
+                    <hr class="section-divide">
                 </ul>
             </div>
-
             <!-- Items -->
             <div class="items-div">
                 <div class="section-name">
@@ -128,6 +180,8 @@
                         </div>
                     </div>
                     <div class="item offers">
+                        <div class="discount-tag">10% off!</div>
+
                         <div class="item10"><img src="./images/items/coffee4.jpeg" alt="">
                             <h4 class="product-name">Steamy Coffee</h4>
                             <h3 class="product-price"><span class="cut-price">$74.42</span> $30.42</h3>
@@ -135,12 +189,44 @@
                         </div>
                     </div>
                 </div>
-                <div class="next-section"><button>Next Section</button>
+                <div class="next-section"><button>NEXT SECTION</button>
                 </div>
             </div>
         </div>
 
         <div class="site-map"></div>
+
+        <!-- about us -->
+        <div class="about-us">
+            <div class="about-us-img">
+                <img src="./images/contact-illustration.svg" alt="">
+            </div>
+            <div class="about-us-deets">
+                <p>
+                    <h1 class="header">CONTACT US</h1>
+                    <h3>We would love to hear from you</h>
+                </p>
+
+                <p>
+                    <h2>Address</h2>
+                    <h3>322 Ikorodu Road, Lagos, Nigeria</h3>
+
+                    <br>
+
+                    <h2>Office Hours</h2>
+                    <h1>
+                        8:00am - 6pm (CAT) | Mondays - Fridays
+                        <br/>
+                        12:00pm - 6pm (CAT) | Saturdays
+                    </h1>
+
+                    <h2>Email</h2>
+                    
+                </p>
+  
+            </div>
+        </div>
+        <!-- about us end -->
 
         <footer>
             <div class="footer-links">
@@ -151,7 +237,7 @@
                 <a class="link" href="">Contact Us</a>
             </div>
 
-            <p class="copyright">2022 "Copyright" Bakerz Bite
+            <p class="copyright">2022 © Bakerz Bite.
             </p>
             <img class="svg" src="./images/bakerzbite-logo/vector/default-monochrome-white.svg" alt="">
         </footer>
@@ -160,6 +246,7 @@
     <!-- jQuery Lib -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script src="popup.js"></script>
 </body>
 
 </html>
