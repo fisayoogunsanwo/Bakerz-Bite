@@ -6,14 +6,11 @@
 }
 */
 * {
-    /* font-family: 'Aboreto', cursive;
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Roboto Slab', serif; */
-    font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 16px;
 }
 
@@ -24,30 +21,30 @@ body {
 }
 
 /* Loader */
-.loader{
-    width:100vw;
-    height:100%;
-    position:absolute;
+.loader {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
     display: flex;
-   justify-content: center;
-   align-items: center;
-   z-index:1;
-   background-image: linear-gradient(to bottom right, #7d5a507e,#e5b299db, #e5b299b0);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-image: linear-gradient(to bottom right, #7d5a507e, #e5b299db, #e5b299b0);
 }
 
-.loader-back-image{
-    width:100vw;
-    height:100%;
-    position:relative;
-    background:url("../images/loader-background-pastry.png") repeat fixed center;
+.loader-back-image {
+    width: 100vw;
+    height: 100%;
+    position: relative;
+    background: url("../images/loader-background-pastry.png") repeat fixed center;
     opacity: 0.15;
     background-size: 40% 80%;
-    z-index:2;
+    z-index: 2;
 }
 
 
 
-.loader-img{
+.loader-img {
     position: absolute;
     border-radius: 40%;
     border: 1px solid #7D5A50;
@@ -56,18 +53,19 @@ body {
     padding: 1%;
     width: 6%;
     margin: auto 0;
-    animation:loader-bop 1000ms ease-in-out infinite alternate;
-    z-index:3;
+    animation: loader-bop 1000ms ease-in-out infinite alternate;
+    z-index: 3;
 }
 
 @keyframes loader-bop {
-    0%{}
-    100%{
+    0% {}
+
+    100% {
         background-color: #3a38453d;
         width: 8%;
         transform: rotateY(180deg);
         box-shadow: 0 0 10px #3a3845dd;
-        }
+    }
 }
 
 /* Main Container */
@@ -75,22 +73,26 @@ body {
     display: none;
     background-color: #FFF4EC;
     box-sizing: border-box;
-    width:100vw;
-    height:auto;
+    width: 100vw;
+    height: auto;
 }
 
 /* Logo */
-.dropdown-menu{
+.dropdown-menu {
     display: none;
 }
 
-header, .logo{
+header,
+.logo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  
 }
-.logo{
+header {position:sticky;}
+
+.logo {
     width: 15%;
 }
 
@@ -108,11 +110,11 @@ header, .logo{
     width: inherit;
     height: 46vh;
     text-align: center;
-   
+
 }
 
-.banner video{
-     border-radius: 3%;
+.banner video {
+    border-radius: 3%;
     object-fit: cover;
     width: 99%;
     height: 100%;
@@ -143,45 +145,57 @@ header, .logo{
     text-align: center;
 }
 
-.menu{
+.menu {
     font-size: 1.7rem;
     color: #7D5A50;
-    letter-spacing: 0.2vw; 
+    letter-spacing: 0.2vw;
 }
 
-.section{
+.section {
     list-style: none;
-    font-size:1.5rem;
+    background-color: transparent;
+    border:none;
+    font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     color: #7D5A50;
-    letter-spacing: 0.2vw;  text-decoration: none;
+    letter-spacing: 0.2vw;
+    text-decoration: none;
     line-height: 2;
-    padding:2% 5%;
+    padding: 2% 5%;
     transition: all 150ms ease;
 }
 
 .section:hover {
     border-radius: 10px;
-    box-shadow:0 0 5px #cb9383;
+    box-shadow: 0 0 5px #cb9383;
 }
 
 .section:active {
-    box-shadow:0 0 12px #7D5A50;
+    box-shadow: 0 0 12px #7D5A50;
 }
 
-.offers-section{
+.offers-section {
     font-weight: bold;
     color: #c23d3d;
-    animation:bop 1s linear infinite alternate both;
+    animation: bop 1.5s linear infinite alternate both;
 }
 
 @keyframes bop {
-   
-    to {font-weight: bolder;
-        font-size:1.7rem;
-        color: #ee1717;}
-  }
-  
+
+    25%{
+        color: #17e0ee;
+    }
+    50%{
+        font-size: 1.6rem;
+        color: #ee5f17;
+    }
+    100% {
+        font-weight: bolder;
+        font-size: 1.7rem;
+        color: #ee1717;
+    }
+}
+
 .section-divide {
     border: none;
     background-color: #7D5A50;
@@ -241,12 +255,14 @@ header, .logo{
     transform: scale(1.1);
 }
 
-.discount-tag{
-    position:absolute;
-    left:25%;
-    width:10%;
+.discount-tag {
+    position: absolute;
+    left: 25%;
+    width: 10%;
     height: 5%;
-    color: wheat;
+    color: black;
+    font-size: 1.7em;
+    font-weight: bold;
     background-color: rgb(255, 58, 58);
 }
 
@@ -282,13 +298,11 @@ h3.product-price {
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
     transition: all 250ms ease-in-out;
-
-
 }
 
 .add-to-cart-btn:hover,
 .next-section button:hover,
-.link:hover {
+.link:hover,.feedback-submit-btn:hover {
     color: #3A3845;
     background-color: #e5b299;
     border: 0.5px solid #3A3845;
@@ -297,7 +311,7 @@ h3.product-price {
 
 .add-to-cart-btn:active,
 .next-section button:active,
-.link:active {
+.link:active,.feedback-submit-btn:active {
     background-color: #d3a994;
 
     transform: translate(5px, 5px);
@@ -329,13 +343,114 @@ h3.product-price {
 
 /* Site Map */
 
-/* About us */
-.about-us{
-    /* background-color: purple; */
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+/* Feedback */
+.feedback-div {
+    text-align: center;
+    margin: 0;
+    /* background-color:#e5b29976; */
+    position: relative; 
+    padding:5% 0;
+    border-radius:5%;
 }
+
+.feedback-div::before{
+    content: "";
+    background: url("../images/sections/cookies/cookies1.jpg") fixed center;
+    background-size: contain;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.6;
+}
+
+.feedback-div h2{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
+        margin: 3% 0 2%;
+        color:#3A3845;
+        letter-spacing: 0.2vw;
+        
+}
+.feedback-inside{
+    position: relative;
+}
+
+.feedback-text {
+
+    font-family: sans-serif;
+    font-size: 1em;
+    width: 40%;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: 'Josefin Sans', Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #3a384555;
+    
+}
+
+.feedback-submit-btn {
+    color: #e5b299;
+    background-color: #3A3845;
+    border-radius: 20%;
+    border: 1px solid #e5b299;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    width: 20%;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 2% 1%;
+    margin-top: 1%;
+}
+
+/* About us and Contact us */
+
+.contact-us,.about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% auto;
+    width: 90%;
+    text-align: center;
+    color: #3A3845;
+}
+.about-us h1{
+    width:20%;
+}
+.about-us-details{
+    width:70%;
+}
+.about-us-logo{
+    width:25%;
+}
+.about-us-paragraph{
+    text-align:justify;
+    font-size: 1em;
+    line-height: 1.4;
+    text-indent: 10%;
+}
+.motto{
+    text-align: center;
+    font-size: 1.2em;
+    color: #7D5A50;
+}
+
+
+.contact-us *{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact-us img {
+    width: 50%;
+    border-radius: 10em;
+}
+
+.contact-us-details {
+    width: 50%;
+}
+
+
 /* Footer */
 footer {
     background-color: #826F66;
@@ -381,63 +496,64 @@ footer {
 769px — 1024px: Small screens, laptops.
  */
 
- /* Small Laptop Screen View*/
- @media (max-width:1100px) {
-    html{
+/* Small Laptop Screen View*/
+@media (max-width:1100px) {
+    html {
         font-size: 12px;
     }
 }
- /* Tablet View*/
+
+/* Tablet View*/
 @media (max-width:900px) {
-    html{
+    html {
         font-size: 10px;
     }
 
-    .banner{
-        height:35vh;
+    .banner {
+        height: 35vh;
     }
 }
 
 @media (max-width:750px) {
-    html{
+    html {
         font-size: 9px;
     }
 
-    .banner{
-        height:30vh;
+    .banner {
+        height: 30vh;
     }
 }
 
 @media (max-width:650px) {
-.item {
-    height: 36vmax;
-}
+    .item {
+        height: 38vmax;
+    }
 }
 
 /* Mobile View */
 @media (max-width:485px) {
     /* 2 cards on a row */
 
-    .banner{
-        height:20vh;
+    .banner {
+        height: 20vh;
     }
 
-    .sections{
-        display:none;
+    .sections {
+        display: none;
     }
 
-    .dropdown-menu{
+    .dropdown-menu {
         display: block;
     }
 
     .the-body {
         display: block;
-        width:90%;
+        width: 90%;
         margin: 0 auto;
     }
-   
+
     .item {
-        height: 37vmax;
+        height: 39vmax;
     }
 
     .items-div {
@@ -456,6 +572,16 @@ footer {
 
 @media (max-width:380px) {
     .item {
-        height: 38vmax;
+        height: 40vmax;
+    }
+    .contact-us {
+        display: block;
+ }
+
+    .contact-us-details {
+        width: 100%;
+    }
+    .contact-us img {
+        width: 80%;
     }
 }

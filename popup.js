@@ -1,12 +1,13 @@
-const openModal = document.querySelector(".add-to-cart-btn");
-const closeModal = document.querySelector(".close-modal");
-const modal = document.querySelector(".modal");
+const openModal = $(".add-to-cart-btn");
+const closeModal = $(".close-modal");
+const modal = $(".outside-modal");
 
-openModal.addEventListener('click', () =>{
-    // openModal.classList("transi");
-    modal.showModal();
+openModal.on('click', () =>{
+    // openModal.classList("transi")
+    modal.addClass("modal-display");
+    modal.show();
 })
-closeModal.addEventListener('click', () =>{
+closeModal.on('click', () =>{
     // openModal.classList("transi");
-    modal.close();
+    modal.hide();
 })

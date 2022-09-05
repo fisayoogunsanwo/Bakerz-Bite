@@ -23,9 +23,10 @@
 <body>
 <!-- <<<<<<< HEAD -->
     <!-- popup start -->
-    <dialog class="modal"> 
+    <div class="outside-modal">
+    <div class="modal"> 
         <div class="close-div">
-            <img class="bb-logo2" src="./images/bakerzbite-logo/vector/default-monochrome.svg">
+            <img class="bb-logo2" src="./images/bakerzbite-logo/vector/default-monochrome-white.svg">
 
             <button class="close-modal">
                 <img src="./images/icons8-no.svg" alt="">
@@ -41,10 +42,7 @@
                 <h2 class="txt-header ul-txt">Ingredients</h2>
                 <h1 class="sub-text">Flour, Wheat, Brown sugar, <br> Chocolate</h1>
                 <h2 class="txt-header">$20.50</h2>
-                <h1 class="popup-item-header">
-                    <button>add</button>
-                    <button>subtract</button>
-                </p>
+              
 
                 <div class="cart-fav">
                     <button>Add to cart</button>
@@ -53,7 +51,9 @@
             </div>
 
         </div>
-    </dialog>
+  
+    </div>
+  </div>
     <!-- popup end -->
 
 <!-- =======
@@ -68,6 +68,11 @@
     <!-- Main Container -->
     <div class="container">
 
+        <!-- JSON Tests -->
+        <!-- <div class="json-line">
+            Checkers
+        </div>
+        <button class="js-button">Let's Check!</button> -->
 
         <!-- Logo -->
         <header>
@@ -95,19 +100,19 @@
                 <p class="menu">MENU</p>
                 <ul class="sections-list">
                     <hr class="section-divide">
-                    <li><a class="section cake-section" href="">Cakes</a> </li>
+                    <li><button class="section cake-section" href="">Cakes</button> </li>
                     <hr class="section-divide">
-                    <li><a class="section pastries-section" href="">Pastries</a></li>
+                    <li><button class="section pastries-section" href="">Pastries</button></li>
                     <hr class="section-divide">
-                    <li><a class="section cookies-section" href="">Cookies</a></li>
+                    <li><button class="section cookies-section" href="">Cookies</button></li>
                     <hr class="section-divide">
-                    <li><a class="section pies-section" href="">Pies</a></li>
+                    <li><button class="section pies-section" href="">Pies</button></li>
                     <hr class="section-divide">
-                    <li><a class="section beverages-section" href="">Beverages</a></li>
+                    <li><button class="section beverages-section" href="">Beverages</button></li>
                     <hr class="section-divide">
-                    <li><a class="section merch-section" href="">Merch</a></li>
+                    <li><button class="section merch-section" href="">Merch</button></li>
                     <hr class="section-divide">
-                    <li class="offers"><a class="section offers-section" href=""> OFFERS (up to 50% discounts)</a></li>
+                    <li class="offers"><button class="section offers-section" href=""> OFFERS (up to 50% discounts)</button></li>
                     <hr class="section-divide">
                 </ul>
             </div>
@@ -199,31 +204,69 @@
 
         <div class="site-map"></div>
 
-        <!-- about us -->
-        <div class="about-us">
-            <div class="about-us-img">
-                <img src="./images/contact-illustration.svg" alt="">
-            </div>
-            <div class="about-us-deets">
-                <p>
-                    <h1 class="header">CONTACT US</h1>
-                    <h3>We would love to hear from you</h>
-                </p>
+        <div id="feedback" class="feedback-div">
+            <div class="feedback-inside">
+            <img src="" alt="">
+            <h2>FEEDBACK</h2>
+            <h3>Kindly let us know what you think...</h3>
+            <textarea name="Feedback" cols="30" rows="10" class="feedback-text"></textarea>
+            <br>
+            <button type="button" class="feedback-submit-btn">SUBMIT</button>
+        </div>
+        </div>
 
+        <!-- About us and Contact us -->
+
+        
+    <div class="about-us">
+    
+       
+        <div class="about-us-details">
+        <p class="about-us-paragraph"><span><img src="./images/bakerzbite-logo/vector/default-monochrome.svg" alt="Bakerz Bite Logo" class="about-us-logo"></span>
+            offers a wide range of baked goods made fresh in-store every day. Our bakery chain offers more than 300 different kinds of baked goods, including artisan pastries, gourmet cakes and desserts, and handcrafted beverages.</p>
+
+            <p class="about-us-paragraph">We take pride in sourcing and using carefully selected ingredients and promise to bring freshness and quality to our customers. We continue to expand and embrace innovation in all markets.</p>
+            
+            
+            <p class="about-us-paragraph">We believe and are dedicated in delivering premium quality products. So we only use real butter, cream and unbleached flour. We treat our Customers as our family and will not use any ingredient which we will not want to feed ours. </p>
+          
+        </div>
+        <h1>ABOUT US</h1>
+</div>
+<p class="motto">  Bakerz Bite...Where smiles are served daily!</p>
+<hr class="under-banner">
+        <div class="contact-us">
+            
+                <img src="./images/sections/gallery/gallery1.jpg" alt="">
+          
+            <div class="contact-us-details">
+              
+                
                 <p>
-                    <h2>Address</h2>
+                    <h1 class="">CONTACT US</h1>
+                    <h2>We would love to hear from you!</h2>
+                </p>
+  <br>
+                <p>
+                    <h2>ADDRESS</h2>
                     <h3>322 Ikorodu Road, Lagos, Nigeria</h3>
 
                     <br>
 
-                    <h2>Office Hours</h2>
-                    <h1>
+
+                    <h2>OFFICE HOURS</h2>
+                    <h3>
                         8:00am - 6pm (CAT) | Mondays - Fridays
                         <br/>
                         12:00pm - 6pm (CAT) | Saturdays
-                    </h1>
+                    </h3>
+                    <br>
 
-                    <h2>Email</h2>
+                    <h2>EMAIL</h2>
+                    <h3>
+                        <a href=""> contactus@bakerzbite.com</a>
+                       
+                    </h3>
                     
                 </p>
   
@@ -231,11 +274,12 @@
         </div>
         <!-- about us end -->
 
+        <!-- Footer -->
         <footer>
             <div class="footer-links">
                 <a class="link" href="">Gallery</a>
                 <a class="link" href="">FAQs</a>
-                <a class="link" href="">Feedback & Rating</a>
+                <a class="link" href="#feedback">Feedback & Rating</a>
                 <a class="link" href="">About Us</a>
                 <a class="link" href="">Contact Us</a>
             </div>
@@ -246,10 +290,12 @@
         </footer>
 
     </div>
+
     <!-- jQuery Lib -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="script.js"></script>
     <script src="popup.js"></script>
+    <script src="script.js"></script>
+    
 </body>
 
 </html>

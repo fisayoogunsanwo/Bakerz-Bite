@@ -1,0 +1,30 @@
+[
+    {
+        "cookies": [
+            {
+                "name": "Cookie Crunch",
+                "price": "$30.50",
+                "ingredients": "Chocolate, Milk, Flour"
+            },
+            {
+                "name": "Macaron special",
+                "price": "$28.50",
+                "ingredients": "Colouring, Milk, Rising Agent"
+            }
+        ]
+    },
+    {
+        "pastries": [
+            {
+                "name": "Classic Cinnamon Roll",
+                "price": "$49.50",
+                "ingredients": "Cinnamon, Butter, Flour"
+            },
+            {
+                "name": "Chocolate Cinnamon Roll",
+                "price": "$60.50",
+                "ingredients": "Cinnamon, Melted Chocolate chip, Butter, Flour"
+            }
+        ]
+    }
+]
