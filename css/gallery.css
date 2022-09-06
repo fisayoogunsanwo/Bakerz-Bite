@@ -370,6 +370,9 @@ footer {
 @media (max-width:485px) {
     /* 2 cards on a row */
 
+    html {
+        font-size: 8px;
+    }
     .banner {
         height: 20vh;
     }
@@ -398,6 +401,8 @@ footer {
 
 }
 
-/* @media (max-width:380px) {
-   
-} */
+@media (max-width:380px) {
+   html {
+        font-size: 7px;
+    }
+}
