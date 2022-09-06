@@ -20,59 +20,53 @@
     <title>Bakerz Bite</title>
 </head>
 
-<body>
-<!-- <<<<<<< HEAD -->
+
+<body ng-app="myApp" onload="checkCookie()">
+
     <!-- popup start -->
     <div class="outside-modal">
-    <div class="modal"> 
-        <div class="close-div">
-            <img class="bb-logo2" src="./images/bakerzbite-logo/vector/default-monochrome-white.svg">
+        <div class="modal">
+            <div class="close-div">
+                <img class="bb-logo2" src="./images/bakerzbite-logo/vector/default-monochrome-white.svg">
 
-            <button class="close-modal">
-                <img src="./images/icons8-no.svg" alt="">
-            </button>   
-        </div>        
-        <div class="modal-sub">
-            <div class="modal-img">
-                <img src="./images/apple-pie1.png" alt="">
+                <button class="close-modal">
+                    <img src="./images/icons8-no.svg" alt="">
+                </button>
             </div>
-
-            <div class="name-div">
-                <h2 class="txt-header">Cookie Crumble</h2>
-                <h2 class="txt-header ul-txt">Ingredients</h2>
-                <h1 class="sub-text">Flour, Wheat, Brown sugar, <br> Chocolate</h1>
-                <h2 class="txt-header">$20.50</h2>
-              
-
-                <div class="cart-fav">
-                    <button>Add to cart</button>
-                    <button>Favourites</button>
+            <div class="modal-sub">
+                <div class="modal-img">
+                    <img src="./images/sections/pastries/pastries7.jpg" alt="">
                 </div>
+
+                <div class="name-div">
+                    <h2 class="txt-header">Cookie Crumble</h2>
+                    <h3 class="txt-header ul-txt">Ingredients</h3>
+                    <h1 class="sub-text">Flour, Wheat, Brown sugar, <br> Chocolate</h1>
+                    <h2 class="txt-header">$20.50</h2>
+
+
+                    <div class="cart-fav">
+                        <button class="add-to-cart-btn">Add to cart</button>
+                        <button class="add-to-cart-btn"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+
             </div>
 
         </div>
-  
     </div>
-  </div>
     <!-- popup end -->
 
-<!-- =======
->>>>>>> 665308d16b7541d44a410a378270748226121653 -->
     <!-- Loader -->
     <div class="loader">
         <div class="loader-back-image">
         </div>
         <img class="loader-img" src="./images/apple-pie3.png" alt="">
     </div>
-    
+
     <!-- Main Container -->
     <div class="container">
-
-        <!-- JSON Tests -->
-        <!-- <div class="json-line">
-            Checkers
-        </div>
-        <button class="js-button">Let's Check!</button> -->
+        <p id="demo">Visitor count: </p>
 
         <!-- Logo -->
         <header>
@@ -86,7 +80,7 @@
 
         <!-- Banner -->
         <div class="banner">
-            <video autoplay>
+            <video autoplay loop>
                 <source src="./images/banner.mp4" type="video/mp4">
                 Your browser does not support this video!!!
             </video>
@@ -100,6 +94,9 @@
                 <p class="menu">MENU</p>
                 <ul class="sections-list">
                     <hr class="section-divide">
+
+                    <li> <a class="section" href="./gallery.html">Gallery</a></li>
+                    <hr class="section-divide">
                     <li><button class="section cake-section" href="">Cakes</button> </li>
                     <hr class="section-divide">
                     <li><button class="section pastries-section" href="">Pastries</button></li>
@@ -112,20 +109,21 @@
                     <hr class="section-divide">
                     <li><button class="section merch-section" href="">Merch</button></li>
                     <hr class="section-divide">
-                    <li class="offers"><button class="section offers-section" href=""> OFFERS (up to 50% discounts)</button></li>
+                    <li class="offers"><button class="section offers-section" href=""> OFFERS (up to 50%
+                            discounts)</button></li>
                     <hr class="section-divide">
                 </ul>
             </div>
             <!-- Items -->
             <div class="items-div">
                 <div class="section-name">
-                    <h2>COOKIES</h2>
+                    <h2>PRODUCTS</h2>
                 </div>
                 <!-- Filter -->
                 <div class="filter"></div>
                 <div class="items grid-container">
                     <div class="item">
-                        <div class="item1"><img src="./images/items/biscuit2.jpeg" alt="">
+                        <div class="item1"><img src="./images/sections/cakes/cake2.jpg" alt="">
                             <h4 class="product-name">Cookie Crumble</h4>
                             <h3 class="product-price">$20.50</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
@@ -133,66 +131,135 @@
                     </div>
                     <div class="item">
                         <div class="item2">
-                            <img src="./images/items/biscuit3.jpeg" alt="">
+                            <img src="./images/sections/pastries/pastries3.jpg" alt="">
                             <h4 class="product-name">Cookiesssss!!!</h4>
                             <h3 class="product-price">$80.50</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item3"><img src="./images/items/biscuit4.jpeg" alt="">
+                        <div class="item3"><img src="./images/sections/cookies/cookies3.jpg" alt="">
                             <h4 class="product-name">Mocha</h4>
                             <h3 class="product-price">$74.50</h3><button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item4"><img src="./images/items/biscuit5.webp" alt="">
+                        <div class="item4"><img src="./images/sections/beverages/bev1.jpg" alt="">
                             <h4 class="product-name">Rocky Coffee</h4>
                             <h3 class="product-price">$20.50</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item5"><img src="./images/items/biscuit6.jpeg" alt="">
+                        <div class="item5"><img src="./images/sections/merch/1.png" alt="">
                             <h4 class="product-name">Grinding Coffee</h4>
                             <h3 class="product-price">$53.00</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item6"><img src="./images/items/biscuit7.webp" alt="">
+                        <div class="item6"><img src="./images/sections/cakes/cake3.jpg" alt="">
                             <h4 class="product-name">Coffee and nuts</h4>
                             <h3 class="product-price">$63.37</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item7"><img src="./images/items/coffee1.jpeg" alt="">
+                        <div class="item7"><img src="./images/sections/pastries/pastries4.jpg" alt="">
                             <h4 class="product-name">Variety of Coffee</h4>
                             <h3 class="product-price">$63.53</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item8"><img src="./images/items/coffee2.jpeg" alt="">
+                        <div class="item8"><img src="./images/sections/cookies/cookies4.jpg" alt="">
                             <h4 class="product-name">Black Coffee</h4>
                             <h3 class="product-price">$88.36</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item9"><img src="./images/items/coffee3.jpeg" alt="">
+                        <div class="item9"><img src="./images/sections/beverages/bev2.jpg" alt="">
                             <h4 class="product-name">CSmiley Coffee</h4>
                             <h3 class="product-price">$83.32</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
-                    <div class="item offers">
-                        <div class="discount-tag">10% off!</div>
-
-                        <div class="item10"><img src="./images/items/coffee4.jpeg" alt="">
-                            <h4 class="product-name">Steamy Coffee</h4>
-                            <h3 class="product-price"><span class="cut-price">$74.42</span> $30.42</h3>
+                    <div class="item">
+                        <div class="item10"><img src="./images/sections/merch/2.png" alt="">
+                            <h4 class="product-name">CSmiley Coffee</h4>
+                            <h3 class="product-price">$83.32</h3>
+                            <button class="add-to-cart-btn">ADD TO CART</button>
+                        </div>
+                    </div>
+                
+                    <div class="item">
+                        <div class="item11"><img src="./images/sections/cakes/cake4.jpg" alt="">
+                            <h4 class="product-name">Coffee and nuts</h4>
+                            <h3 class="product-price">$63.37</h3>
+                            <button class="add-to-cart-btn">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item12"><img src="./images/sections/pastries/pastries5.jpg" alt="">
+                            <h4 class="product-name">Variety of Coffee</h4>
+                            <h3 class="product-price">$63.53</h3>
+                            <button class="add-to-cart-btn">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item13"><img src="./images/sections/cookies/cookies5.jpg" alt="">
+                            <h4 class="product-name">Black Coffee</h4>
+                            <h3 class="product-price">$88.36</h3>
+                            <button class="add-to-cart-btn">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item14"><img src="./images/sections/beverages/bev3.jpg" alt="">
+                            <h4 class="product-name">CSmiley Coffee</h4>
+                            <h3 class="product-price">$83.32</h3>
+                            <button class="add-to-cart-btn">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item15"><img src="./images/sections/merch/3.png" alt="">
+                            <h4 class="product-name">CSmiley Coffee</h4>
+                            <h3 class="product-price">$83.32</h3>
+                            <button class="add-to-cart-btn">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item16"><img src="./images/sections/cakes/cake5.jpg" alt="">
+                            <h4 class="product-name">Coffee and nuts</h4>
+                            <h3 class="product-price">$63.37</h3>
+                            <button class="add-to-cart-btn">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item17"><img src="./images/sections/pastries/pastries6.jpg" alt="">
+                            <h4 class="product-name">Variety of Coffee</h4>
+                            <h3 class="product-price">$63.53</h3>
+                            <button class="add-to-cart-btn">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item18"><img src="./images/sections/cookies/cookies6.jpg" alt="">
+                            <h4 class="product-name">Black Coffee</h4>
+                            <h3 class="product-price">$88.36</h3>
+                            <button class="add-to-cart-btn">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item19"><img src="./images/sections/beverages/bev4.jpg" alt="">
+                            <h4 class="product-name">CSmiley Coffee</h4>
+                            <h3 class="product-price">$83.32</h3>
+                            <button class="add-to-cart-btn">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item20"><img src="./images/sections/merch/4.png" alt="">
+                            <h4 class="product-name">CSmiley Coffee</h4>
+                            <h3 class="product-price">$83.32</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
@@ -206,70 +273,77 @@
 
         <div id="feedback" class="feedback-div">
             <div class="feedback-inside">
-            <img src="" alt="">
-            <h2>FEEDBACK</h2>
-            <h3>Kindly let us know what you think...</h3>
-            <textarea name="Feedback" cols="30" rows="10" class="feedback-text"></textarea>
-            <br>
-            <button type="button" class="feedback-submit-btn">SUBMIT</button>
-        </div>
+                <img src="" alt="">
+                <h2>FEEDBACK</h2>
+                <h3>Kindly let us know what you think...</h3>
+                <textarea name="Feedback" cols="30" rows="10" class="feedback-text"></textarea>
+                <br>
+                <button type="button" class="feedback-submit-btn">SUBMIT</button>
+            </div>
         </div>
 
         <!-- About us and Contact us -->
 
-        
-    <div class="about-us">
-    
-       
-        <div class="about-us-details">
-        <p class="about-us-paragraph"><span><img src="./images/bakerzbite-logo/vector/default-monochrome.svg" alt="Bakerz Bite Logo" class="about-us-logo"></span>
-            offers a wide range of baked goods made fresh in-store every day. Our bakery chain offers more than 300 different kinds of baked goods, including artisan pastries, gourmet cakes and desserts, and handcrafted beverages.</p>
 
-            <p class="about-us-paragraph">We take pride in sourcing and using carefully selected ingredients and promise to bring freshness and quality to our customers. We continue to expand and embrace innovation in all markets.</p>
-            
-            
-            <p class="about-us-paragraph">We believe and are dedicated in delivering premium quality products. So we only use real butter, cream and unbleached flour. We treat our Customers as our family and will not use any ingredient which we will not want to feed ours. </p>
-          
+        <div class="about-us" id="aboutUs">
+
+
+            <div class="about-us-details">
+                <p class="about-us-paragraph"><span><img src="./images/bakerzbite-logo/vector/default-monochrome.svg"
+                            alt="Bakerz Bite Logo" class="about-us-logo"></span>
+                    offers a wide range of baked goods made fresh in-store every day. Our bakery chain offers more than
+                    300 different kinds of baked goods, including artisan pastries, gourmet cakes and desserts, and
+                    handcrafted beverages.</p>
+
+                <p class="about-us-paragraph">We take pride in sourcing and using carefully selected ingredients and
+                    promise to bring freshness and quality to our customers. We continue to expand and embrace
+                    innovation in all markets.</p>
+
+
+                <p class="about-us-paragraph">We believe and are dedicated in delivering premium quality products. So we
+                    only use real butter, cream and unbleached flour. We treat our Customers as our family and will not
+                    use any ingredient which we will not want to feed ours. </p>
+
+            </div>
+            <h1>ABOUT US</h1>
         </div>
-        <h1>ABOUT US</h1>
-</div>
-<p class="motto">  Bakerz Bite...Where smiles are served daily!</p>
-<hr class="under-banner">
-        <div class="contact-us">
-            
-                <img src="./images/sections/gallery/gallery1.jpg" alt="">
-          
+        <p class="motto"> Bakerz Bite...Where smiles are served daily!</p>
+        <hr class="under-banner">
+        <div class="contact-us" id="contactUs">
+
+            <img src="./images/sections/gallery/gallery1.jpg" alt="">
+
             <div class="contact-us-details">
-              
-                
+
+
                 <p>
-                    <h1 class="">CONTACT US</h1>
-                    <h2>We would love to hear from you!</h2>
+                <h1 class="">CONTACT US</h1>
+                <h2>We would love to hear from you!</h2>
                 </p>
-  <br>
+                <br>
                 <p>
-                    <h2>ADDRESS</h2>
-                    <h3>322 Ikorodu Road, Lagos, Nigeria</h3>
+                <h2>ADDRESS</h2>
+                <h3>322 Ikorodu Road, Lagos, Nigeria</h3>
 
-                    <br>
+                <br>
 
 
-                    <h2>OFFICE HOURS</h2>
-                    <h3>
-                        8:00am - 6pm (CAT) | Mondays - Fridays
-                        <br/>
-                        12:00pm - 6pm (CAT) | Saturdays
-                    </h3>
-                    <br>
+                <h2>OFFICE HOURS</h2>
+                <h3>
+                    8:00am - 6pm (CAT) | Mondays - Fridays
+                    <br />
+                    12:00pm - 6pm (CAT) | Saturdays
+                </h3>
+                <br>
 
-                    <h2>EMAIL</h2>
-                    <h3>
-                        <a href=""> contactus@bakerzbite.com</a>
-                       
-                    </h3>
-                    
+                <h2>EMAIL</h2>
+                <h3>
+                    <a href=""> contactus@bakerzbite.com</a>
+
+                </h3>
+
                 </p>
-  
+
             </div>
         </div>
         <!-- about us end -->
@@ -277,25 +351,33 @@
         <!-- Footer -->
         <footer>
             <div class="footer-links">
-                <a class="link" href="">Gallery</a>
+                <a class="link" href="./gallery.html">Gallery</a>
                 <a class="link" href="">FAQs</a>
                 <a class="link" href="#feedback">Feedback & Rating</a>
-                <a class="link" href="">About Us</a>
-                <a class="link" href="">Contact Us</a>
+                <a class="link" href="#aboutUs">About Us</a>
+                <a class="link" href="#contactUs">Contact Us</a>
             </div>
 
             <p class="copyright">2022 © Bakerz Bite.
             </p>
             <img class="svg" src="./images/bakerzbite-logo/vector/default-monochrome-white.svg" alt="">
         </footer>
-
+        <div>
+            <marquee behavior="" direction="" id="id"></marquee>
+        </div>
     </div>
 
+
+    <script src="angular.js"></script>
+    <script src="angular-route.js"></script>
+    <script src="date&location.js"></script>
+    <script src="routing.js"></script>
+    <script defer src="counter.js"></script>
     <!-- jQuery Lib -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="popup.js"></script>
     <script src="script.js"></script>
-    
+
 </body>
 
 </html>

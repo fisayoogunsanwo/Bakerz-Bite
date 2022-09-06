@@ -1,12 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;&display=swap');
+.modal *{
+    font-family: 'Montserrat', sans-serif;
+}
 .modal{
     height: 65vh;
     width: 50vw; 
-    background-color: rgb(125, 90, 80);
+    background-color: rgba(125, 90, 80, 0.851);
     color: #ffffff;
     border: none;
     border-radius: 5%;
     max-width: 80ch;
+    padding:2%;
 }
 
 
@@ -31,6 +35,10 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
+}
+.close-div>img{
+    width: 20%;
+    margin-left:10%;
 }
 .item-img{
     display: flex;
@@ -79,6 +87,8 @@
     object-fit: contain;
     width: 100%;
     height: inherit;
+    border: 1px solid #ebc696;
+    border-radius: 10%;
 }
 
 .name-div h2{

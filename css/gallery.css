@@ -13,12 +13,7 @@ body {
     background-color: #FFF4EC;
 }
 
-#id,#demo {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    color: #7D5A50;
-    margin:0;
-}
+
 /* Loader */
 .loader {
     width: 100vw;
@@ -103,132 +98,57 @@ header {position:sticky;}
     width: 65%;
 }
 
-/* Banner */
-.banner {
-    margin: 0 auto;
-    width: inherit;
-    height: 46vh;
-    text-align: center;
-
-}
-
-.banner video {
-    border-radius: 3%;
-    object-fit: cover;
-    width: 99%;
-    height: 100%;
-}
-
-.under-banner {
-    border: none;
-    background-color: #7D5A50;
-    height: 0.2vh;
-    width: 99%;
-    margin: 2% 0;
-}
-
 /* The Body */
-.the-body {
+/* .the-body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-/* Sections */
-.sections-list {
-    padding-left: 0;
-}
-
-.sections {
-    width: 20%;
-    text-align: center;
-}
-
-.menu {
-    font-size: 1.7rem;
-    color: #7D5A50;
-    letter-spacing: 0.2vw;
-}
-
-.section {
-    list-style: none;
-    background-color: transparent;
-    border:none;
-    font-size: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
-    color: #7D5A50;
-    letter-spacing: 0.2vw;
-    text-decoration: none;
-    line-height: 2;
-    padding: 2% 5%;
-    transition: all 150ms ease;
-}
-
-.section:hover {
-    border-radius: 10px;
-    box-shadow: 0 0 5px #cb9383;
-}
-
-.section:active {
-    box-shadow: 0 0 12px #7D5A50;
-}
-
-.offers-section {
-    font-weight: bold;
-    color: #c23d3d;
-    animation: bop 1.5s linear infinite alternate both;
-}
-
-@keyframes bop {
-
-    25%{
-        color: #17e0ee;
-    }
-    50%{
-        font-size: 1.6rem;
-        color: #ee5f17;
-    }
-    100% {
-        font-weight: bolder;
-        font-size: 1.7rem;
-        color: #ee1717;
-    }
-}
-
-.section-divide {
-    border: none;
-    background-color: #7D5A50;
-    height: 0.5px;
-    width: 90%;
-    margin: 2% 0;
-}
+} */
 
 /* Items */
 .section-name {
     text-align: center;
 }
+.section-name img{
+    width:25%;
+    border-radius: 20%;
+}
 
-.section-name h2 {
+
+.section-name h1, .section-name h3,.arrow {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 3% 0 2%;
     color: #7D5A50;
     letter-spacing: 0.2vw;
 }
+.section-name h3{
+    letter-spacing: 0.1vw;
+    font-size: 1.8rem;
+}
+.section-divide {
+    border: none;
+    background-color: #7D5A50;
+    height: 1px;
+    margin: 2% 0;
+}
+
 
 .items-div {
-    width: 78%;
+    width: 95%;
+    margin: 0 auto;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 31% 31% 31%;
+    grid-template-columns: auto auto auto auto;
     gap: 2vw;
+    margin:5% 0 7% 0;
 }
 
 .item {
     margin: 2% 1%;
-    height: 35vmax;
+    height: 30vmax;
     width: auto;
     background-color: #e5b29976;
     border-radius: 20% 20% 4% 4%;
@@ -244,7 +164,7 @@ header {position:sticky;}
 
 .item img {
     width: 100%;
-    height: 25vmax;
+    height: 30vmax;
     border-radius: 20% 20% 0 0;
     transition: all 450ms ease-in-out;
     /* position: relative; */
@@ -255,34 +175,9 @@ header {position:sticky;}
 }
 
 .discount-tag {
-    position: absolute;
-    left: 25%;
-    width: 10%;
-    height: 5%;
-    color: black;
-    font-size: 1.7em;
-    font-weight: bold;
+    position:absolute;
+    top:90%;
     background-color: rgb(255, 58, 58);
-}
-
-h4.product-name {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.3rem;
-    margin: 3% 0 2%;
-    color: #3A3845;
-}
-
-h3.product-price {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    letter-spacing: 0.2vw;
-    color: #7D5A50;
-    margin: 3% 0;
-}
-
-.cut-price {
-    text-decoration: line-through;
-    color: #787682;
 }
 
 .add-to-cart-btn {
@@ -336,8 +231,6 @@ h3.product-price {
     transition: all 250ms ease-in-out;
 }
 
-
-/* Site Map */
 
 /* Feedback */
 .feedback-div {
@@ -400,52 +293,6 @@ h3.product-price {
     margin-top: 1%;
 }
 
-/* About us and Contact us */
-
-.contact-us,.about-us {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5% auto;
-    width: 90%;
-    text-align: center;
-    color: #3A3845;
-}
-.about-us h1{
-    width:20%;
-}
-.about-us-details{
-    width:70%;
-}
-.about-us-logo{
-    width:25%;
-}
-.about-us-paragraph{
-    text-align:justify;
-    font-size: 1.2em;
-    line-height: 2;
-    text-indent: 10%;
-}
-.motto{
-    text-align: center;
-    font-size: 1.2em;
-    color: #7D5A50;
-}
-
-
-.contact-us *{
-    font-family: 'Montserrat', sans-serif;
-}
-
-.contact-us img {
-    width: 50%;
-    border-radius: 10em;
-}
-
-.contact-us-details {
-    width: 50%;
-}
-
 
 /* Footer */
 footer {
@@ -504,25 +351,18 @@ footer {
     html {
         font-size: 10px;
     }
-
-    .banner {
-        height: 35vh;
-    }
 }
 
 @media (max-width:750px) {
     html {
         font-size: 9px;
     }
-
-    .banner {
-        height: 30vh;
-    }
 }
 
 @media (max-width:650px) {
-    .item {
-        height: 38vmax;
+      /* 3 cards on a row */
+    .grid-container {
+        grid-template-columns: auto auto auto;
     }
 }
 
@@ -548,10 +388,6 @@ footer {
         margin: 0 auto;
     }
 
-    .item {
-        height: 39vmax;
-    }
-
     .items-div {
         width: 100%;
     }
@@ -560,24 +396,8 @@ footer {
         grid-template-columns: auto auto;
     }
 
-    .add-to-cart-btn {
-        width: 50%;
-    }
-
 }
 
-@media (max-width:380px) {
-    .item {
-        height: 40vmax;
-    }
-    .contact-us {
-        display: block;
- }
-
-    .contact-us-details {
-        width: 100%;
-    }
-    .contact-us img {
-        width: 80%;
-    }
-}
+/* @media (max-width:380px) {
+   
+} */

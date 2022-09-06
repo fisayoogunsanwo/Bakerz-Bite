@@ -7,16 +7,6 @@ let sectionName = $(".section-name h2")
 let item = $(".item")
 let item1Img = $(".item1 img")
 
-//Section Buttons
-let cakeBtn = $(".cake-section");
-let pastriesBtn = $(".pastries-section");
-let cookiesBtn = $(".cookies-section");
-let piesBtn = $(".pies-section");
-let beveragesBtn = $(".beverages-section");
-let offersBtn = $(".offers-section");
-let merchBtn = $(".merch-section");
-let section = $(".section")
-
 
 // Start Page with loader
 document.addEventListener('DOMContentLoaded', function() {  setTimeout(() => {
