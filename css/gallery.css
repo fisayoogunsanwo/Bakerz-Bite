@@ -82,9 +82,12 @@ header,
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  
+
 }
-header {position:sticky;}
+
+header {
+    position: sticky;
+}
 
 .logo {
     width: 15%;
@@ -109,23 +112,28 @@ header {position:sticky;}
 .section-name {
     text-align: center;
 }
-.section-name img{
-    width:25%;
+
+.section-name img {
+    width: 25%;
     border-radius: 20%;
 }
 
 
-.section-name h1, .section-name h3,.arrow {
+.section-name h1,
+.section-name h3,
+.arrow {
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
     margin: 3% 0 2%;
     color: #7D5A50;
     letter-spacing: 0.2vw;
 }
-.section-name h3{
+
+.section-name h3 {
     letter-spacing: 0.1vw;
     font-size: 1.8rem;
 }
+
 .section-divide {
     border: none;
     background-color: #7D5A50;
@@ -143,7 +151,7 @@ header {position:sticky;}
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 2vw;
-    margin:5% 0 7% 0;
+    margin: 5% 0 7% 0;
 }
 
 .item {
@@ -175,8 +183,8 @@ header {position:sticky;}
 }
 
 .discount-tag {
-    position:absolute;
-    top:90%;
+    position: absolute;
+    top: 90%;
     background-color: rgb(255, 58, 58);
 }
 
@@ -196,7 +204,8 @@ header {position:sticky;}
 
 .add-to-cart-btn:hover,
 .next-section button:hover,
-.link:hover,.feedback-submit-btn:hover {
+.link:hover,
+.feedback-submit-btn:hover {
     color: #3A3845;
     background-color: #e5b299;
     border: 0.5px solid #3A3845;
@@ -205,7 +214,8 @@ header {position:sticky;}
 
 .add-to-cart-btn:active,
 .next-section button:active,
-.link:active,.feedback-submit-btn:active {
+.link:active,
+.feedback-submit-btn:active {
     background-color: #d3a994;
 
     transform: translate(5px, 5px);
@@ -237,12 +247,12 @@ header {position:sticky;}
     text-align: center;
     margin: 0;
     /* background-color:#e5b29976; */
-    position: relative; 
-    padding:5% 0;
-    border-radius:5%;
+    position: relative;
+    padding: 5% 0;
+    border-radius: 5%;
 }
 
-.feedback-div::before{
+.feedback-div::before {
     content: "";
     background: url("../images/sections/cookies/cookies1.jpg") fixed center;
     background-size: contain;
@@ -254,15 +264,16 @@ header {position:sticky;}
     opacity: 0.6;
 }
 
-.feedback-div h2{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 2rem;
-        margin: 3% 0 2%;
-        color:#3A3845;
-        letter-spacing: 0.2vw;
-        
+.feedback-div h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin: 3% 0 2%;
+    color: #3A3845;
+    letter-spacing: 0.2vw;
+
 }
-.feedback-inside{
+
+.feedback-inside {
     position: relative;
 }
 
@@ -275,7 +286,7 @@ header {position:sticky;}
     padding: 10px;
     font-family: 'Josefin Sans', Verdana, Geneva, Tahoma, sans-serif;
     background-color: #3a384555;
-    
+
 }
 
 .feedback-submit-btn {
@@ -360,7 +371,8 @@ footer {
 }
 
 @media (max-width:650px) {
-      /* 3 cards on a row */
+
+    /* 3 cards on a row */
     .grid-container {
         grid-template-columns: auto auto auto;
     }
@@ -373,6 +385,7 @@ footer {
     html {
         font-size: 8px;
     }
+
     .banner {
         height: 20vh;
     }
@@ -402,7 +415,7 @@ footer {
 }
 
 @media (max-width:380px) {
-   html {
+    html {
         font-size: 7px;
     }
 }

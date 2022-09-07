@@ -13,12 +13,14 @@ body {
     background-color: #FFF4EC;
 }
 
-#id,#demo {
+#id,
+#demo {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     color: #7D5A50;
-    margin:0;
+    margin: 0;
 }
+
 /* Loader */
 .loader {
     width: 100vw;
@@ -87,9 +89,12 @@ header,
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  
+
 }
-header {position:sticky;}
+
+header {
+    position: sticky;
+}
 
 .logo {
     width: 15%;
@@ -153,7 +158,7 @@ header {position:sticky;}
 .section {
     list-style: none;
     background-color: transparent;
-    border:none;
+    border: none;
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     color: #7D5A50;
@@ -181,13 +186,15 @@ header {position:sticky;}
 
 @keyframes bop {
 
-    25%{
+    25% {
         color: #17e0ee;
     }
-    50%{
+
+    50% {
         font-size: 1.6rem;
         color: #ee5f17;
     }
+
     100% {
         font-weight: bolder;
         font-size: 1.7rem;
@@ -301,7 +308,8 @@ h3.product-price {
 
 .add-to-cart-btn:hover,
 .next-section button:hover,
-.link:hover,.feedback-submit-btn:hover {
+.link:hover,
+.feedback-submit-btn:hover {
     color: #3A3845;
     background-color: #e5b299;
     border: 0.5px solid #3A3845;
@@ -310,7 +318,8 @@ h3.product-price {
 
 .add-to-cart-btn:active,
 .next-section button:active,
-.link:active,.feedback-submit-btn:active {
+.link:active,
+.feedback-submit-btn:active {
     background-color: #d3a994;
 
     transform: translate(5px, 5px);
@@ -344,12 +353,12 @@ h3.product-price {
     text-align: center;
     margin: 0;
     /* background-color:#e5b29976; */
-    position: relative; 
-    padding:5% 0;
-    border-radius:5%;
+    position: relative;
+    padding: 5% 0;
+    border-radius: 5%;
 }
 
-.feedback-div::before{
+.feedback-div::before {
     content: "";
     background: url("../images/sections/cookies/cookies1.jpg") fixed center;
     background-size: contain;
@@ -361,15 +370,16 @@ h3.product-price {
     opacity: 0.6;
 }
 
-.feedback-div h2{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 2rem;
-        margin: 3% 0 2%;
-        color:#3A3845;
-        letter-spacing: 0.2vw;
-        
+.feedback-div h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin: 3% 0 2%;
+    color: #3A3845;
+    letter-spacing: 0.2vw;
+
 }
-.feedback-inside{
+
+.feedback-inside {
     position: relative;
 }
 
@@ -382,7 +392,7 @@ h3.product-price {
     padding: 10px;
     font-family: 'Josefin Sans', Verdana, Geneva, Tahoma, sans-serif;
     background-color: #3a384555;
-    
+
 }
 
 .feedback-submit-btn {
@@ -402,7 +412,8 @@ h3.product-price {
 
 /* About us and Contact us */
 
-.contact-us,.about-us {
+.contact-us,
+.about-us {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -411,29 +422,34 @@ h3.product-price {
     text-align: center;
     color: #3A3845;
 }
-.about-us h1{
-    width:20%;
+
+.about-us h1 {
+    width: 20%;
 }
-.about-us-details{
-    width:70%;
+
+.about-us-details {
+    width: 70%;
 }
-.about-us-logo{
-    width:25%;
+
+.about-us-logo {
+    width: 25%;
 }
-.about-us-paragraph{
-    text-align:justify;
+
+.about-us-paragraph {
+    text-align: justify;
     font-size: 1.2em;
     line-height: 2;
     text-indent: 10%;
 }
-.motto{
+
+.motto {
     text-align: center;
     font-size: 1.2em;
     color: #7D5A50;
 }
 
 
-.contact-us *{
+.contact-us * {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -570,13 +586,15 @@ footer {
     .item {
         height: 40vmax;
     }
+
     .contact-us {
         display: block;
- }
+    }
 
     .contact-us-details {
         width: 100%;
     }
+
     .contact-us img {
         width: 80%;
     }

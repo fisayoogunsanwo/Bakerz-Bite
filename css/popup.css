@@ -1,20 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;&display=swap');
-.modal *{
+
+.modal * {
     font-family: 'Montserrat', sans-serif;
 }
-.modal{
-    height: 65vh;
-    width: 50vw; 
+
+.modal {
+    height: 50vh;
+    width: 50vw;
     background-color: rgba(125, 90, 80, 0.851);
     color: #ffffff;
     border: none;
     border-radius: 5%;
     max-width: 80ch;
-    padding:2%;
+    padding: 2%;
 }
 
 
-.outside-modal{
+.outside-modal {
     width: 100vw;
     height: 100%;
     display: none;
@@ -22,52 +24,57 @@
     align-items: center;
     position: fixed;
     z-index: 1;
-    background: linear-gradient(55deg,rgba(255, 244, 236, 0.698),rgb(125, 90, 80),rgba(229, 178, 153, 0.463));
+    background: linear-gradient(55deg, rgba(255, 244, 236, 0.698), rgb(125, 90, 80), rgba(229, 178, 153, 0.463));
 
 }
-.modal-display{
+
+.modal-display {
     display: flex;
 }
-.close-div{
-    /* background-color: #e5b29976; */
+
+.close-div {
     width: 100%;
     height: 10%;
     margin: auto;
     display: flex;
     justify-content: space-between;
 }
-.close-div>img{
+
+.close-div>img {
     width: 20%;
-    margin-left:10%;
+    margin-left: 10%;
 }
-.item-img{
+
+.item-img {
     display: flex;
     justify-content: space-between;
 }
-.close-modal{
+
+.close-modal {
     cursor: pointer;
     background-color: transparent;
     width: 10%;
     height: 100%;
     border: none;
 }
-.close-modal img{
+
+.close-modal img {
     border-radius: 50%;
     object-fit: contain;
     object-position: center;
 }
-.close-modal img:hover{
+
+.close-modal img:hover {
     background-color: #ebc696;
     border-color: #ebc696;
 }
 
-.close-modal img:active{
+.close-modal img:active {
     background-color: #ff0000;
     border-color: #ff0000;
 }
 
-
-.modal-sub{
+.modal-sub {
     padding: 0;
     margin: 0;
     display: flex;
@@ -75,30 +82,31 @@
     justify-content: space-evenly;
     height: 90%;
     width: 100%;
-    /* background: fuchsi.a; */
 }
-.modal-img{
-    width: 50%; 
-    height: 100%; 
+
+.modal-img {
+    width: 50%;
+    height: 100%;
     cursor: pointer;
-    /* box-shadow: 0 0 10px #3a3845dd; */
-} 
-.modal-img img{
+}
+
+.modal-img img {
     object-fit: contain;
     width: 100%;
     height: inherit;
-    border: 1px solid #ebc696;
-    border-radius: 10%;
+    border-radius: 10px;
 }
 
-.name-div h2{
-    font-family: 'Oswald', sans-serif;    
+.name-div h2 {
+    font-family: 'Oswald', sans-serif;
     font-weight: bolder;
     font-size: 2em;
 }
-.name-div h1{
+
+.name-div h1 {
     font-size: 1.2em;
 }
-.ul-txt{
-    text-decoration:underline;
+
+.ul-txt {
+    text-decoration: underline;
 }
