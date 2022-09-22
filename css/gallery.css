@@ -254,7 +254,7 @@ header {
 
 .feedback-div::before {
     content: "";
-    background: url("../images/sections/cookies/cookies1.jpg") fixed center;
+    background: url("https://res.cloudinary.com/diqleis0t/image/upload/v1663680481/Bakerz/cookies1_tfukpz.jpg") fixed center;
     background-size: contain;
     position: absolute;
     top: 0px;

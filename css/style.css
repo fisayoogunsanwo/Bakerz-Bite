@@ -5,6 +5,7 @@
 
 html {
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -178,10 +179,15 @@ header {
     box-shadow: 0 0 12px #7D5A50;
 }
 
-.offers-section {
+#offers-section {
     font-weight: bold;
     color: #c23d3d;
     animation: bop 1.5s linear infinite alternate both;
+}
+
+.selected{
+    border-radius: 10px;
+    box-shadow: 0 0 12px #7D5A50;
 }
 
 @keyframes bop {
@@ -213,6 +219,10 @@ header {
 /* Items */
 .section-name {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .section-name h2 {
@@ -222,6 +232,25 @@ header {
     color: #7D5A50;
     letter-spacing: 0.2vw;
 }
+
+.products-loader {
+    margin-left: 1rem;
+    border: 0.7rem solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 0.7rem solid #7D5A50;
+    border-right: 0.7rem solid #cb9383;
+    border-bottom: 0.7rem solid #3A3845;
+    border-left: 0.7rem solid #e5b299;
+    width: 3rem;
+    height: 3rem;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    display:none;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
 
 .items-div {
     width: 78%;
@@ -292,6 +321,8 @@ h3.product-price {
     color: #787682;
 }
 
+
+
 .add-to-cart-btn {
     color: #e5b299;
     background-color: #3A3845;
@@ -360,7 +391,7 @@ h3.product-price {
 
 .feedback-div::before {
     content: "";
-    background: url("../images/sections/cookies/cookies1.jpg") fixed center;
+    background: url("https://res.cloudinary.com/diqleis0t/image/upload/v1663680481/Bakerz/cookies1_tfukpz.jpg") fixed center;
     background-size: contain;
     position: absolute;
     top: 0px;

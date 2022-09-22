@@ -1,0 +1,237 @@
+{
+    "cakes": [
+        {
+            "name": "Caliante Chocolate Cake",
+            "price": "$2.50",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663678843/Bakerz/cake2_q1shz3.jpg"
+        },
+        {
+            "name": "Zareli Choc Cake Slice",
+            "price": "$1.50",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663678846/Bakerz/cake3_o17gck.jpg"
+        },
+        {
+            "name": "Rosetta Cupcake",
+            "price": "$3.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663678838/Bakerz/cake4_hxjzaj.jpg"
+        },
+        {
+            "name": "Chocolate Chip Cupcake",
+            "price": "$4.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663678852/Bakerz/cake5_lhxcxb.jpg"
+        },
+        {
+            "name": "Dark Chocolate Cupcake",
+            "price": "$4.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663678850/Bakerz/cake6_nknejv.jpg"
+        }
+    ],
+    "pastries": [
+        {
+            "name": "Ellanuts",
+            "price": "$7.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680309/Bakerz/pastries1_yptnhb.jpg"
+        },
+        {
+            "name": "Biscaos",
+            "price": "$6.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680279/Bakerz/pastries3_bkslok.jpg"
+        },
+        {
+            "name": "Hazelnut and Chocolate Donut",
+            "price": "$4.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680287/Bakerz/pastries4_yqax5c.jpg"
+        },
+        {
+            "name": "Twirly Cinnamon Roll",
+            "price": "$7.50",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680268/Bakerz/pastries5_goq5tc.jpg"
+        },
+        {
+            "name": "Vanila/Chocolate Bread",
+            "price": "$5.50",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680285/Bakerz/pastries6_p3ij04.jpg"
+        },
+        {
+            "name": "Cocolate Coated Donuts",
+            "price": "$8.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680289/Bakerz/pastries7_azvua3.jpg"
+        }
+    ],
+    "cookies": [
+        {
+            "name": "Green Macarons",
+            "price": "$2.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680479/Bakerz/cookies2_nvsyig.jpg"
+        },
+        {
+            "name": "Delicious Cookies",
+            "price": "$1.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680490/Bakerz/cookies3_mhpfjz.jpg"
+        },
+        {
+            "name": "Chocolate Chip Cookies",
+            "price": "$1.50",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680468/Bakerz/cookies4_k7r2bj.jpg"
+        },
+        {
+            "name": "Variety Cookies",
+            "price": "$2.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680494/Bakerz/cookies5_fokzro.jpg"
+        },
+        {
+            "name": "Dark Choc Chip Cookies",
+            "price": "$1.50",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680483/Bakerz/cookies6_l0whn3.jpg"
+        },
+        {
+            "name": "Strawberry Macarons",
+            "price": "$3.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680488/Bakerz/cookies7_bov3i9.jpg"
+        }
+    ],
+    "pies": [
+        {
+            "name": "Ellanuts",
+            "price": "$7.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680309/Bakerz/pastries1_yptnhb.jpg"
+        }
+    ],
+    "beverages": [
+        {
+            "name": "Whipped Chocolate Milkshake",
+            "price": "$10.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680448/Bakerz/bev1_nay8x7.jpg"
+        },
+        {
+            "name": "Milanti",
+            "price": "$15.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680472/Bakerz/bev2_pythqn.jpg"
+        },
+        {
+            "name": "Purple Haze",
+            "price": "$13.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680453/Bakerz/bev3_tnelrv.jpg"
+        },
+        {
+            "name": "Snow White",
+            "price": "$12.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680447/Bakerz/bev4_viipbm.jpg"
+        },
+        {
+            "name": "Mocha",
+            "price": "$11.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680431/Bakerz/bev5_yktjje.jpg"
+        }
+    ],
+    "merch": [
+        {
+            "name": "Bakerz Signature Cup",
+            "price": "$1.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680449/Bakerz/1_a7gex0.png"
+        },
+        {
+            "name": "Bakerz Throw Pillow",
+            "price": "$5.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680423/Bakerz/2_qkjuso.png"
+        },
+        {
+            "name": "Bakerz White Tee",
+            "price": "$9.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680469/Bakerz/3_lfybbp.png"
+        },
+        {
+            "name": "Bakerz White Mug",
+            "price": "$3.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680433/Bakerz/4_adembd.png"
+        },
+        {
+            "name": "Bakerz Couch Pillow",
+            "price": "$3.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680366/Bakerz/5_q70eop.png"
+        },
+        {
+            "name": "Bakerz White Half-up Tee",
+            "price": "$10.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680424/Bakerz/6_gtr8le.png"
+        },
+        {
+            "name": "Bakerz White Tote",
+            "price": "$10.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680448/Bakerz/7_cten7z.png"
+        },
+        {
+            "name": "Bakerz White Mug (plain)",
+            "price": "$4.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680297/Bakerz/8_tfywtd.png"
+        },
+        {
+            "name": "Bakerz White Onezie",
+            "price": "$12.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680360/Bakerz/9_plf0lg.png"
+        },
+        {
+            "name": "Bakerz  Tee (colors)",
+            "price": "$15.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680358/Bakerz/10_fls2js.png"
+        },
+        {
+            "name": "Bakerz Journal",
+            "price": "$20.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680337/Bakerz/11_pcjtft.png"
+        },
+        {
+            "name": "Bakerz Shopping Bag",
+            "price": "$1.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680339/Bakerz/12_prww8u.png"
+        },
+        {
+            "name": "Bakerz Plastic Carry Cup",
+            "price": "$1.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680397/Bakerz/13_qxmye6.png"
+        },
+        {
+            "name": "Bakerz Sweat Shirt",
+            "price": "$1.00",
+            "ingredients": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "imageSRC": "https://res.cloudinary.com/diqleis0t/image/upload/v1663680336/Bakerz/14_jiwo5g.png"
+        }
+    ]
+
+}

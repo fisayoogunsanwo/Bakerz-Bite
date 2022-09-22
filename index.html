@@ -21,7 +21,7 @@
 </head>
 
 
-<body ng-app="myApp" onload="checkCookie()">
+<body>
 
     <!-- popup start -->
     <div class="outside-modal">
@@ -66,7 +66,7 @@
 
     <!-- Main Container -->
     <div class="container">
-        <p id="demo">Visitor count: </p>
+      
 
         <!-- Logo -->
         <header>
@@ -81,7 +81,7 @@
         <!-- Banner -->
         <div class="banner">
             <video autoplay loop>
-                <source src="./images/banner.mp4" type="video/mp4">
+                <source src="https://res.cloudinary.com/diqleis0t/video/upload/v1663764958/Bakerz/banner_jy1lh0.mp4" type="video/mp4">
                 Your browser does not support this video!!!
             </video>
         </div>
@@ -95,21 +95,22 @@
                 <ul class="sections-list">
                     <hr class="section-divide">
 
+                    
+                    <li><button type="button" data-myindex="0" class="section" id="cake-section" href="">Cakes</button> </li>
+                    <hr class="section-divide">
+                    <li><button type="button" data-myindex="1" class="section" id="pastries-section" href="">Pastries</button></li>
+                    <hr class="section-divide">
+                    <li><button type="button" data-myindex="2" class="section" id="cookies-section" href="">Cookies</button></li>
+                    <hr class="section-divide">
+                    <li><button type="button" data-myindex="3" class="section" id="pies-section" href="">Pies</button></li>
+                    <hr class="section-divide">
+                    <li><button type="button" data-myindex="4" class="section" id="beverages-section" href="">Beverages</button></li>
+                    <hr class="section-divide">
+                    <li><button type="button" data-myindex="5" class="section" id="merch-section" href="">Merch</button></li>
+                    <hr class="section-divide">
                     <li> <a class="section" href="./gallery.html">Gallery</a></li>
                     <hr class="section-divide">
-                    <li><button class="section cake-section" href="">Cakes</button> </li>
-                    <hr class="section-divide">
-                    <li><button class="section pastries-section" href="">Pastries</button></li>
-                    <hr class="section-divide">
-                    <li><button class="section cookies-section" href="">Cookies</button></li>
-                    <hr class="section-divide">
-                    <li><button class="section pies-section" href="">Pies</button></li>
-                    <hr class="section-divide">
-                    <li><button class="section beverages-section" href="">Beverages</button></li>
-                    <hr class="section-divide">
-                    <li><button class="section merch-section" href="">Merch</button></li>
-                    <hr class="section-divide">
-                    <li class="offers"><button class="section offers-section" href=""> OFFERS (up to 50%
+                    <li class="offers"><button type="button" data-myindex="6" class="section" id="offers-section" href=""> OFFERS (up to 50%
                             discounts)</button></li>
                     <hr class="section-divide">
                 </ul>
@@ -118,147 +119,149 @@
             <div class="items-div">
                 <div class="section-name">
                     <h2>PRODUCTS</h2>
+                    <div class="products-loader"></div>
                 </div>
                 <!-- Filter -->
                 <div class="filter"></div>
+              
                 <div class="items grid-container">
                     <div class="item">
-                        <div class="item1"><img src="./images/sections/cakes/cake2.jpg" alt="">
-                            <h4 class="product-name">Cookie Crumble</h4>
+                        <div class="item-data"><img src="https://res.cloudinary.com/diqleis0t/image/upload/v1663680424/Bakerz/6_gtr8le.png" alt="">
+                            <h4 class="product-name">Bakerz White Half-up Tee</h4>
                             <h3 class="product-price">$20.50</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item2">
-                            <img src="./images/sections/pastries/pastries3.jpg" alt="">
-                            <h4 class="product-name">Cookiesssss!!!</h4>
+                        <div class="item-data">
+                            <img src="https://res.cloudinary.com/diqleis0t/image/upload/v1663680279/Bakerz/pastries3_bkslok.jpg" alt="">
+                            <h4 class="product-name">Biscaos</h4>
                             <h3 class="product-price">$80.50</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item3"><img src="./images/sections/cookies/cookies3.jpg" alt="">
-                            <h4 class="product-name">Mocha</h4>
+                        <div class="item-data"><img src="https://res.cloudinary.com/diqleis0t/image/upload/v1663680490/Bakerz/cookies3_mhpfjz.jpg" alt="">
+                            <h4 class="product-name">Chocolate Cookies</h4>
                             <h3 class="product-price">$74.50</h3><button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item4"><img src="./images/sections/beverages/bev1.jpg" alt="">
-                            <h4 class="product-name">Rocky Coffee</h4>
+                        <div class="item-data"><img src="https://res.cloudinary.com/diqleis0t/image/upload/v1663680448/Bakerz/bev1_nay8x7.jpg" alt="">
+                            <h4 class="product-name">Whipped Chocolate Milkshake</h4>
                             <h3 class="product-price">$20.50</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item5"><img src="./images/sections/merch/1.png" alt="">
-                            <h4 class="product-name">Grinding Coffee</h4>
+                        <div class="item-data"><img src="https://res.cloudinary.com/diqleis0t/image/upload/v1663680449/Bakerz/1_a7gex0.png" alt="">
+                            <h4 class="product-name">Coffee</h4>
                             <h3 class="product-price">$53.00</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item6"><img src="./images/sections/cakes/cake3.jpg" alt="">
-                            <h4 class="product-name">Coffee and nuts</h4>
+                        <div class="item-data"><img src="https://res.cloudinary.com/diqleis0t/image/upload/v1663678846/Bakerz/cake3_o17gck.jpg" alt="">
+                            <h4 class="product-name">Chocolate Cake Slices</h4>
                             <h3 class="product-price">$63.37</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item7"><img src="./images/sections/pastries/pastries4.jpg" alt="">
-                            <h4 class="product-name">Variety of Coffee</h4>
+                        <div class="item-data"><img src="https://res.cloudinary.com/diqleis0t/image/upload/v1663680287/Bakerz/pastries4_yqax5c.jpg" alt="">
+                            <h4 class="product-name">Hazelnut & Chocolate Donut</h4>
                             <h3 class="product-price">$63.53</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item8"><img src="./images/sections/cookies/cookies4.jpg" alt="">
-                            <h4 class="product-name">Black Coffee</h4>
+                        <div class="item-data"><img src="https://res.cloudinary.com/diqleis0t/image/upload/v1663680468/Bakerz/cookies4_k7r2bj.jpg" alt="">
+                            <h4 class="product-name">Chocolate Chip Cookies</h4>
                             <h3 class="product-price">$88.36</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item9"><img src="./images/sections/beverages/bev2.jpg" alt="">
-                            <h4 class="product-name">CSmiley Coffee</h4>
+                        <div class="item-data"><img src="https://res.cloudinary.com/diqleis0t/image/upload/v1663680472/Bakerz/bev2_pythqn.jpg" alt="">
+                            <h4 class="product-name">Milanti</h4>
                             <h3 class="product-price">$83.32</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item10"><img src="./images/sections/merch/2.png" alt="">
-                            <h4 class="product-name">CSmiley Coffee</h4>
+                        <div class="item-data"><img src="https://res.cloudinary.com/diqleis0t/image/upload/v1663680423/Bakerz/2_qkjuso.png" alt="">
+                            <h4 class="product-name">Bakerz Throw Pillow</h4>
                             <h3 class="product-price">$83.32</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
 
                     <div class="item">
-                        <div class="item11"><img src="./images/sections/cakes/cake4.jpg" alt="">
-                            <h4 class="product-name">Coffee and nuts</h4>
+                        <div class="item-data"><img src="https://res.cloudinary.com/diqleis0t/image/upload/v1663678838/Bakerz/cake4_hxjzaj.jpg" alt="">
+                            <h4 class="product-name">Rosetta Cupcake</h4>
                             <h3 class="product-price">$63.37</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item12"><img src="./images/sections/pastries/pastries5.jpg" alt="">
-                            <h4 class="product-name">Variety of Coffee</h4>
+                        <div class="item-data"><img src="https://res.cloudinary.com/diqleis0t/image/upload/v1663680268/Bakerz/pastries5_goq5tc.jpg" alt="">
+                            <h4 class="product-name">Twirly Cinnamon Roll</h4>
                             <h3 class="product-price">$63.53</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item13"><img src="./images/sections/cookies/cookies5.jpg" alt="">
-                            <h4 class="product-name">Black Coffee</h4>
+                        <div class="item-data"><img src="https://res.cloudinary.com/diqleis0t/image/upload/v1663680494/Bakerz/cookies5_fokzro.jpg" alt="">
+                            <h4 class="product-name">Variety Cookies</h4>
                             <h3 class="product-price">$88.36</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item14"><img src="./images/sections/beverages/bev3.jpg" alt="">
-                            <h4 class="product-name">CSmiley Coffee</h4>
+                        <div class="item-data"><img src="https://res.cloudinary.com/diqleis0t/image/upload/v1663680453/Bakerz/bev3_tnelrv.jpg" alt="">
+                            <h4 class="product-name">Purple Haze</h4>
                             <h3 class="product-price">$83.32</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item15"><img src="./images/sections/merch/3.png" alt="">
-                            <h4 class="product-name">CSmiley Coffee</h4>
+                        <div class="item-data"><img src="https://res.cloudinary.com/diqleis0t/image/upload/v1663680469/Bakerz/3_lfybbp.png" alt="">
+                            <h4 class="product-name">Bakerz White Tee</h4>
                             <h3 class="product-price">$83.32</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item16"><img src="./images/sections/cakes/cake5.jpg" alt="">
-                            <h4 class="product-name">Coffee and nuts</h4>
+                        <div class="item-data"><img src="https://res.cloudinary.com/diqleis0t/image/upload/v1663678852/Bakerz/cake5_lhxcxb.jpg" alt="">
+                            <h4 class="product-name">Chocolate Chip Cupcake</h4>
                             <h3 class="product-price">$63.37</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item17"><img src="./images/sections/pastries/pastries6.jpg" alt="">
-                            <h4 class="product-name">Variety of Coffee</h4>
+                        <div class="item-data"><img src="https://res.cloudinary.com/diqleis0t/image/upload/v1663680285/Bakerz/pastries6_p3ij04.jpg" alt="">
+                            <h4 class="product-name">Vanila/Chocolate Bread</h4>
                             <h3 class="product-price">$63.53</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item18"><img src="./images/sections/cookies/cookies6.jpg" alt="">
-                            <h4 class="product-name">Black Coffee</h4>
+                        <div class="item-data"><img src="https://res.cloudinary.com/diqleis0t/image/upload/v1663680483/Bakerz/cookies6_l0whn3.jpg" alt="">
+                            <h4 class="product-name">Chocolate Chip Cookies</h4>
                             <h3 class="product-price">$88.36</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item19"><img src="./images/sections/beverages/bev4.jpg" alt="">
-                            <h4 class="product-name">CSmiley Coffee</h4>
+                        <div class="item-data"><img src="https://res.cloudinary.com/diqleis0t/image/upload/v1663680447/Bakerz/bev4_viipbm.jpg" alt="">
+                            <h4 class="product-name">Snow White</h4>
                             <h3 class="product-price">$83.32</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="item20"><img src="./images/sections/merch/4.png" alt="">
-                            <h4 class="product-name">CSmiley Coffee</h4>
+                        <div class="item-data"><img src="https://res.cloudinary.com/diqleis0t/image/upload/v1663680433/Bakerz/4_adembd.png" alt="">
+                            <h4 class="product-name">Bakerz White Mug</h4>
                             <h3 class="product-price">$83.32</h3>
                             <button class="add-to-cart-btn">ADD TO CART</button>
                         </div>
@@ -311,7 +314,7 @@
         <hr class="under-banner">
         <div class="contact-us" id="contactUs">
 
-            <img src="./images/sections/gallery/gallery1.jpg" alt="">
+            <img src="https://res.cloudinary.com/diqleis0t/image/upload/v1663680218/Bakerz/gallery1_ro3htv.jpg" alt="">
 
             <div class="contact-us-details">
 
@@ -362,20 +365,13 @@
             </p>
             <img class="svg" src="./images/bakerzbite-logo/vector/default-monochrome-white.svg" alt="">
         </footer>
-        <div>
-            <marquee behavior="" direction="" id="id"></marquee>
-        </div>
+
     </div>
 
 
-    <script src="angular.js"></script>
-    <script src="angular-route.js"></script>
-    <script src="date&location.js"></script>
-    <script src="routing.js"></script>
-    <script defer src="counter.js"></script>
+  
     <!-- jQuery Lib -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="popup.js"></script>
     <script src="script.js"></script>
 
 </body>
